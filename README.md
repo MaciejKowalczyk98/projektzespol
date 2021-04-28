@@ -1,10 +1,10 @@
-#Projekt aplikacji spamerskiej 
+# Projekt aplikacji spamerskiej 
 
-##Kroki aby uruchomić aplikację 
+## Kroki aby uruchomić aplikację 
 
 1. Aplikacja jest postawiona na xampp, a więc należy go zainstalować. 
 2. Otrzymany folder – strona_spamerska wklejamy w plik htdocs. Standardowa ścieżka dostępu "C:\xampp\htdocs". Można również dostać się do podanego pliku przez xamppa zgodnie z poniższą instrukcją: 
-![1]
+![1](1.png)
 3. Startujemy Apcha i MySQL. 
 4. Przy MySQL wybieramy przycisk "Admin". W tym momencie włączy się nam phpmyadmin.
 5. Tworzymy nową bazę danych i nazywamy ją strona_spamerska (takie mamy połączenie w php).
@@ -15,22 +15,22 @@
 [4]
 8. Zapisujemy i otwieramy projekt pod adresem http://localhost/strona_spamerska/view/
 
-###Ważne
+### Ważne
 
 Aplikacja została stworzona na systemie operacyjnym Windows, ważne jest aby był on zaktualizowany. W przypadku korzystania z laptopa powinien byc on podłączony do prądu (chodzi o tryb oszczędzania baterii, który zablokuje harmonogram zadań)!
 
 Jeżeli xampp nie jest zainstalowany bezpośrednio na dysku c to wtedy należy zmienić ścieżkę dostępu w pliku send_mail.php w view.
 $data = file_get_contents('/xampp/htdocs/strona_spamerska/view/'.$image);
 
-##Jak korzystać z aplikacji
+## Jak korzystać z aplikacji
 
 Należy się zarejestrować, lub zalogować. Wtedy przechodzimy na widok panelu administracyjnego, gdzie znajduje się formularz dotyczący wysyłania meila. Należy go wypełnić i wysłać.
 
-##Jak działa aplikacja 
+## Jak działa aplikacja 
 
 Po wypełnieniu formularza w folderze naszego projektu assets zapisują się załączone obrazki. Następnie zostaje przesłana komenda do cmd, która tworzy harmonogram zadań o wyznaczonej w formularzu godzinie. Jednocześnie w folderze bat tworzy się plik typu bat, który zostanie wywołany gdy nastąpi pora wywołania zadnia. Posiada on parametry meila. Wywołuje on  skrypt send_mail.php odpowiedzialny za przesłanie meila. 
 
-##Jak skonfigurować smtp (na przykładzie gmail)
+## Jak skonfigurować smtp (na przykładzie gmail)
 
 1. W xampp wybieramy Explorer.
 [5]
@@ -62,44 +62,44 @@ W auth_username = mail@gmail.com podajemy swojego meila, a w auth_password = has
 7. Ostatnim krokiem będzie nadanie praw na gmailu. Link do nadania uprawnień: 
 https://support.google.com/accounts/answer/6010255?p=lsa_blocked&hl=pl&visit_id=637546291965916587-1508290013&rd=1#zippy=%2Cje%C5%9Bli-na-koncie-jest-w%C5%82%C4%85czony-dost%C4%99p-mniej-bezpiecznych-aplikacji
 
-##Testy obciążeniowe
+## Testy obciążeniowe
 
-###Pierwszy test 
+### Pierwszy test 
 -n ilość żądań
 -c ilość wysyłanych żądań naraz
 dla c = 10, k = 10 
 
-[t1.1]
+![t1.1](https://raw.githubusercontent.com/MaciejKowalczyk98/projektzespol/master/t1.1.png)
 [t1.2]
 
-###Drugi test 
+### Drugi test 
 dla c = 10, k = 20
 
 [t2.1]
 
-###Trzeci test 
+### Trzeci test 
 dla c = 10, k = 30
 
 [t3.1]
 
-###Czwarty test 
+### Czwarty test 
 dla c = 10, k = 40
 
 [t4.1]
 
-###Piąty test 
+### Piąty test 
 dla c = 10, k = 50
 
 [t5.1]
 [t5.2]
 
-###Szósty test 
+### Szósty test 
 dla c = 10, k = 100
 
 [t6.1]
 [t6.2]
 
-###Siódmy test 
+### Siódmy test 
 dla c = 10, k = 1000
 
 [t7.1]
