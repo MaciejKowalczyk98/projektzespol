@@ -28,7 +28,10 @@
 Aplikacja została stworzona na systemie operacyjnym Windows, ważne jest aby był on zaktualizowany. W przypadku korzystania z laptopa powinien byc on podłączony do prądu (chodzi o tryb oszczędzania baterii, który zablokuje harmonogram zadań)!
 
 Jeżeli xampp nie jest zainstalowany bezpośrednio na dysku c to wtedy należy zmienić ścieżkę dostępu w pliku send_mail.php w view.
+
+```bash
 $data = file_get_contents('/xampp/htdocs/strona_spamerska/view/'.$image);
+```
 
 ## Jak korzystać z aplikacji
 
@@ -71,7 +74,7 @@ auth_password = haslo
 force_sender = testdevcorner@gmail.com
 ``` 
 
-W auth_username = mail@gmail.com podajemy swojego meila, a w auth_password = haslo  hasło do niego.
+- W auth_username = mail@gmail.com podajemy swojego meila, a w auth_password = haslo  hasło do niego.
 
 7. Ostatnim krokiem będzie nadanie praw na gmailu. Link do nadania uprawnień: 
 https://support.google.com/accounts/answer/6010255?p=lsa_blocked&hl=pl&visit_id=637546291965916587-1508290013&rd=1#zippy=%2Cje%C5%9Bli-na-koncie-jest-w%C5%82%C4%85czony-dost%C4%99p-mniej-bezpiecznych-aplikacji
