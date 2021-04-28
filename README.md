@@ -21,13 +21,13 @@
 
 ![4](4.png)
 
-8. Zapisujemy i otwieramy projekt pod adresem http://localhost/strona_spamerska/view/
+8. Zapisujemy i otwieramy projekt pod adresem: http://localhost/strona_spamerska/view/
 
-### Ważne!
+**Ważne!**
 
-Aplikacja została stworzona na systemie operacyjnym Windows, ważne jest aby był on zaktualizowany. W przypadku korzystania z laptopa powinien byc on podłączony do prądu (chodzi o tryb oszczędzania baterii, który zablokuje harmonogram zadań)!
+- Aplikacja została stworzona na systemie operacyjnym Windows, ważne jest aby był on zaktualizowany. W przypadku korzystania z laptopa powinien byc on podłączony do prądu (chodzi o tryb oszczędzania baterii, który zablokuje harmonogram zadań)!
 
-Jeżeli xampp nie jest zainstalowany bezpośrednio na dysku c to wtedy należy zmienić ścieżkę dostępu w pliku send_mail.php w view.
+- Jeżeli xampp nie jest zainstalowany bezpośrednio na dysku c to wtedy należy zmienić ścieżkę dostępu w pliku send_mail.php w view.
 
 ```bash
 $data = file_get_contents('/xampp/htdocs/strona_spamerska/view/'.$image);
