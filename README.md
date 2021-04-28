@@ -5,21 +5,21 @@
 1. Aplikacja jest postawiona na xampp, a więc należy go zainstalować. 
 2. Otrzymany folder – strona_spamerska wklejamy w plik htdocs. Standardowa ścieżka dostępu "C:\xampp\htdocs". Można również dostać się do podanego pliku przez xamppa zgodnie z poniższą instrukcją: 
 
-![1](1.png)
+![1](photo/1.png)
 
 3. Startujemy Apcha i MySQL. 
 4. Przy MySQL wybieramy przycisk "Admin". W tym momencie włączy się nam phpmyadmin.
 5. Tworzymy nową bazę danych i nazywamy ją strona_spamerska (takie mamy połączenie w php).
 
-![2](2.png)
+![2](photo/2.png)
 
 6. Tworzymy nową tabele i nazywamy ją user.
 
-![3](3.png)
+![3](photo/3.png)
 
 7. Dodajemy elementy w sposób przedstawiony na poniższym zrzucie ekranu:
 
-![4](4.png)
+![4](photo/4.png)
 
 8. Zapisujemy i otwieramy projekt pod adresem: http://localhost/strona_spamerska/view/
 
@@ -45,7 +45,7 @@ Po wypełnieniu formularza w folderze naszego projektu assets zapisują się za�
 
 1. W xampp wybieramy Explorer.
 
-![5](5.png)
+![5](photo/5.png)
 
 2. Wybieramy php/php.ini
 3. Wyszukujemy w treści [mail function]
@@ -88,50 +88,50 @@ https://support.google.com/accounts/answer/6010255?p=lsa_blocked&hl=pl&visit_id=
 dla c = 10, k = 10 
 ``` 
 
-![t1.1](t1.1.png)
-![t1.2](t1.2.png)
+![t1.1](photo/t1.1.png)
+![t1.2](photo/t1.2.png)
 
 ### Drugi test
 ```bash  
 dla c = 10, k = 20
 ``` 
 
-![t2.1](t2.1.png)
+![t2.1](photo/t2.1.png)
 
 ### Trzeci test
 ```bash  
 dla c = 10, k = 30
 ``` 
 
-![t3.1](t3.1.png)
+![t3.1](photo/t3.1.png)
 
 ### Czwarty test
 ```bash  
 dla c = 10, k = 40
 ``` 
 
-![t4.1](t4.1.png)
+![t4.1](photo/t4.1.png)
 
 ### Piąty test
 ```bash  
 dla c = 10, k = 50
 ``` 
 
-![t5.1](t5.1.png)
-![t5.2](t5.2.png)
+![t5.1](photo/t5.1.png)
+![t5.2](photo/t5.2.png)
 
 ### Szósty test
 ```bash  
 dla c = 10, k = 100
 ``` 
 
-![t6.1](t6.1.png)
-![t6.2](t6.2.png)
+![t6.1](photo/t6.1.png)
+![t6.2](photo/t6.2.png)
 
 ### Siódmy test
 ```bash  
 dla c = 10, k = 1000
 ``` 
 
-![t7.1](t7.1.png)
-![t7.2](t7.2.png)
+![t7.1](photo/t7.1.png)
+![t7.2](photo/t7.2.png)
